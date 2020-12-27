@@ -17,7 +17,7 @@ wget "https://zoom.us/client/latest/zoom_amd64.deb" -O zoom.deb
 sudo dpkg -i zoom.deb
 
 # instlaling the suckless "suite"
-cd rice/dmenu
+cd dmenu
 sudo make clean install
 cd .. && cd dwm
 sudo make clean install
