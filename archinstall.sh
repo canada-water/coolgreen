@@ -7,14 +7,14 @@ sudo pacman -Syu
 sudo pacman -S firefox discord thunar xorg-server xorg-xinit xorg-xauth nitrogen code rhythmbox picom xautolock ttf-font-awesome otf-font-awesome
 
 # installing yay
-# git clone https://aur.archlinux.org/yay.git && cd yay
-# makepkg -si
+git clone https://aur.archlinux.org/yay.git && cd yay
+makepkg -si
 
 # installing AUR packages
 yay -S spotify pfetch-git zoom teams
 
 # installing the suckless "suite"
-cd rice/dmenu
+cd dmenu
 sudo make clean install
 cd .. && cd dwm
 sudo make clean install
