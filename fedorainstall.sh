@@ -2,8 +2,21 @@
 # update
 sudo dnf upgrade
 
-# simple installations
-sudo dnf install firefox thunar xorg-x11-server xorg-x11-xinit xorg-x11-xauth xautolock nitrogen rhythmbox fontawesome-fonts lpf-spotify-client picom
+# internet
+sudo dnf install firefox
+
+# xorg
+sudo dnf install xorg-x11-server
+sudo dnf install xorg-x11-xinit
+sudo dnf install xorg-x11-xauth
+sudo dnf install xautolock
+sudo dnf install nitrogen
+sudo dnf install picom
+
+# sound
+sudo dnf install rhythmbox
+sudo dnf install pavucontrol
+sudo dnf install lpf-spotify-client
 
 # discord installation
 wget "https://discordapp.com/api/download?platform=linux&format=tar.gz"

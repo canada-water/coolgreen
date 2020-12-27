@@ -3,8 +3,27 @@
 sudo emerge --sync
 sudo emerge --update --deep --with-bdeps=y --newuse @world
 
-# installations
-sudo emerge --ask www-client/firefox net-im/discord-bin xfce-base/thunar x11-base/xorg-server x11-apps/xinit x11-apps/xauth x11-apps/xautolock x11-misc/nitrogen media-sound/rhythmbox media-sound/spotify x11-misc/picom media-fonts/fontawesome net-im/teams net-im/zoom
+# internet
+sudo emerge --ask www-client/firefox
+sudo emerge --ask net-im/discord-bin
+
+# xorg
+sudo emerge --ask x11-base/xorg-server
+sudo emerge --ask x11-apps/xinit
+sudo emerge --ask x11-apps/xauth
+sudo emerge --ask x11-apps/xautolock
+sudo emerge --ask x11-misc/nitrogen
+sudo emerge --ask x11-misc/picom
+
+# sound
+sudo emerge --ask media-sound/rhythmbox
+sudo emerge --ask media-sound/spotify
+sudo emerge --ask media-sound/pavucontrol
+sudo emerge --ask media-sound/pulsemixer
+
+# misc
+sudo emerge --ask xfce-base/thunar
+sudo emerge --ask media-fonts/fontawesome
 
 # pfetch
 git clone https://github.com/dylanaraps/pfetch.git && cd pfetch

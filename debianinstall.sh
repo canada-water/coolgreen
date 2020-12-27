@@ -4,7 +4,14 @@ sudo apt-get update
 sudo apt-get upgrade
 
 # simple installations
-sudo apt install firefox thunar xorg xinit xauth nitrogen rhythmbox compton xautolock
+sudo apt install firefox
+sudo apt install thunar
+sudo apt install xorg
+sudo apt install xinit
+sudo apt install xauth
+sudo apt install xautolock
+sudo apt install rhythmbox
+sudo apt install compton
 
 # .deb installations
 wget "https://discordapp.com/api/download?platform=linux&format=deb" -O discord.deb

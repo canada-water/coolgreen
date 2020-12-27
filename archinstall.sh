@@ -3,15 +3,37 @@
 sudo pacman -Su
 sudo pacman -Syu
 
-# simple installations
-sudo pacman -S firefox discord thunar xorg-server xorg-xinit xorg-xauth nitrogen code rhythmbox picom xautolock ttf-font-awesome otf-font-awesome
+# internet
+sudo pacman -S firefox
+sudo pacman -S discord
+
+# xorg
+sudo pacman -S xorg-server
+sudo pacman -S xorg-xinit
+sudo pacman -S xorg-xauth
+sudo pacman -S xautolock
+sudo pacman -S nitrogen
+sudo pacman -S picom
+
+# sound
+sudo pacman -S rhythmbox
+sudo pacman -S pavucontrol
+sudo pacman -S pamixer
+
+# misc
+sudo pacman -S thunar
+sudo pacman -S ttf-font-awesome
+sudo pacman -S otf-font-awesome
 
 # installing yay
 git clone https://aur.archlinux.org/yay.git && cd yay
 makepkg -si
 
 # installing AUR packages
-yay -S spotify pfetch-git zoom teams
+yay -S spotify 
+yay -S pfetch-git
+yay -S zoom
+yay -S teams
 
 # installing the suckless "suite"
 cd dmenu
