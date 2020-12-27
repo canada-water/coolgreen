@@ -12,7 +12,7 @@ sudo make install
 cd ..
 
 # installing the suckless "suite"
-cd rice/dmenu
+cd dmenu
 sudo make clean install
 cd .. && cd dwm
 sudo make clean install
