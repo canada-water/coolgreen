@@ -14,4 +14,5 @@ To install the release, you have to first download the .tar.gz archive from the 
 After the archive is unpacked, ``cd`` into the unpacked folder. Within that folder are installation scripts. These scripts are distro-specific, and as such are named that way. Pick the one for your distro or the distro your current distro is based on. Run:
 
 ``sudo chmod u+x <distro>install.sh
+
 ./<distro>install.sh``
