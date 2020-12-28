@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # update
 sudo pacman -Su
 sudo pacman -Syu
