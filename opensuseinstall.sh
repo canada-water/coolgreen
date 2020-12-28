@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # additional imports
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo zypper ar https://packages.microsoft.com/yumrepos/ms-teams/ ms-teams
