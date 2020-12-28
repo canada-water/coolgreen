@@ -6,6 +6,8 @@ coolgreen is more than just a rice; it's a full installation package. What dwm, 
 
 coolgreen is based off of dwm and utelizes other pieces of suckless software. The suckless philosophy is to keep the software as minimal as possible. I've attempted to keep with that philosophy and to continue to provide a minimal package, while at the same time expanding upon the suckless philosophy by making it easy. Consider, if you will, coolgreen as the easy button to window managers.
 
+Currently, coolgreen is offered on Arch Linux and its derivitives, Debian and its derivitives, Fedora, Gentoo, and openSUSE. By the time coolgreen reaches version 1.0, it will be offered fluidly on most, if not all current Linux distros. In its current state, the scripts for installation are experimental. I haven't attempted to run a single one on actual hardware, so these are simply guesses as to what would work. If you're sold, go ahead and download it to give it a shot. I would love some feedback on this project, as it will help me understand what I need to do in order to make this the best project I possibly can.
+
 ## installation
 I have done my best to make the installation of this as streamlined and simple as possible. There are currently two methods of installation: choosing a release .tar.gz file, or using the latest, bleeding-edge version of this which I have out. I recommend sticking to the point release, but if you're adventerous, you can go ahead and use the source directly.
 
