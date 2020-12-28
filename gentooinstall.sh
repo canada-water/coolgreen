@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # update
 sudo emerge --sync
 sudo emerge --update --deep --with-bdeps=y --newuse @world
