@@ -6,4 +6,9 @@
 I have done my best to make the installation of this as streamlined and simple as possible. There are currently two methods of installation: choosing a release .tar.gz file, or using the latest, bleeding-edge version of this which I have out. I recommend sticking to the point release, but if you're adventerous, you can go ahead and use the source directly.
 
 **release**
-To install the release, you have to first download the .tar.gz archive. To unpack it, run ``tar -xzvf coolgreen-<release-number>.tar.gz``. 
+
+To install the release, you have to first download the .tar.gz archive from the releases tab. To unpack it, run:
+
+``tar -xzvf coolgreen-<release-number>.tar.gz``
+
+After the archive is unpacked, ``cd`` into the unpacked folder. 
