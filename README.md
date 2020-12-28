@@ -1,4 +1,4 @@
-# coolgreen: a dwm rice
+# coolgreen: a desktop environment installation package
 ## introduction
 Linux is about learning. You learn how to not be afraid of the command line. You learn what makes a kernel click. You learn what freedom truly is, and you learn how to experience that freedom. Something else you learn is how to customize. The customizations simply are as limitless as your imagination is. There's a catch with that though: what if you're not very creative? Or what if the limitless opportunities are daunting to some? That's something that I aim to solve, or at least fix a part of, with **coolgreen**.
 
@@ -35,3 +35,17 @@ Afterwards, ``cd`` into the directory, and run the same commands as the release 
 
 # screenshots
 [screenshot1](https://github.com/canada-water/coolgreen/blob/main/screenshots/coolgreen1.png)
+
+# to-do
+
+( ) optimize rice as much as possible
+
+( ) fix keybindings for audio
+
+( ) figure out picom vs compton debate
+
+( ) get display manager working
+
+( ) test the installation scripts
+
+( ) package final release
