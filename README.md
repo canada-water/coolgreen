@@ -17,9 +17,7 @@ To install the release, you have to first download the .tar.gz archive from the 
 
 ``tar -xzvf coolgreen-<release-number>.tar.gz``
 
-After the archive is unpacked, ``cd`` into the unpacked folder. Within that folder are installation scripts. These scripts are distro-specific, and as such are named accordingly. Pick the one for your distro or the distro your current distro is based on. Run:
-
-``sudo chmod u+x <distro>install.sh``
+After the archive is unpacked, ``cd`` into the unpacked folder. Within that folder are installation scripts. These scripts are distro-specific, and as such are named accordingly (in the future, these will be trimmed down to a single install script, but my current knowledge prevents me from doing so). Pick the one for your distro or the distro your current distro is based on and run the following command:
 
 ``./<distro>install.sh``
 
@@ -34,7 +32,7 @@ This is basically the same as the release, except you can simply run
 Afterwards, ``cd`` into the directory, and run the same commands as the release install.
 
 # screenshots
-[screenshot1](https://github.com/canada-water/coolgreen/blob/main/screenshots/coolgreen1.png)
+![screenshot1](https://github.com/canada-water/coolgreen/blob/main/screenshots/coolgreen1.png)
 
 # to-do
 
@@ -42,10 +40,14 @@ Afterwards, ``cd`` into the directory, and run the same commands as the release 
 
 ( ) fix keybindings for audio
 
-( ) figure out picom vs compton debate
+( ) add in notification center
+
+(x) figure out picom vs compton debate
 
 ( ) get display manager working
 
-( ) test the installation scripts
+( ) test and improve the installation scripts
+
+( ) remove proprietary software from scripts
 
 ( ) package final release
