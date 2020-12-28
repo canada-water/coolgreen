@@ -32,3 +32,6 @@ This is basically the same as the release, except you can simply run
 ``git clone https://github.com/canada-water/coolgreen.git``
 
 Afterwards, ``cd`` into the directory, and run the same commands as the release install.
+
+# screenshots
+[screenshot1](https://github.com/canada-water/coolgreen/blob/main/screenshots/coolgreen1.png)
