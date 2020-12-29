@@ -1,4 +1,7 @@
 # coolgreen: a desktop environment installation package
+## important update 29 Dec 2020
+As a few people have pointed out to me, a part of the suckless philosophy is to keep the user base elitist, which is why the installation and configuration of the software is more difficult than most and has limited documentation. With this in mind, I have decided to put this project on hiatus and find a different dynamic window manager to use for the project. Currently, I do not know how long this will take, but please stay tuned for more information in the coming months. For those of you who have expressed interest so far, thank you, and I hope to continue to see your suport.
+
 ## introduction
 Linux is about learning. You learn how to not be afraid of the command line. You learn what makes a kernel click. You learn what freedom truly is, and you learn how to experience that freedom. Something else you learn is how to customize. The customizations simply are as limitless as your imagination is. There's a catch with that though: what if you're not very creative? Or what if the limitless opportunities are daunting to some? That's something that I aim to solve, or at least fix a part of, with **coolgreen**.
 
