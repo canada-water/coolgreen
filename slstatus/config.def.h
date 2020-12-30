@@ -23,7 +23,7 @@ static const char unknown_str[] = "n/a";
  * datetime            date and time                   format string (%F %T)
  * disk_free           free disk space in GB           mountpoint path (/)
  * disk_perc           disk usage in percent           mountpoint path (/)
- * disk_total          total disk space in GB          mountpoint path (/)
+ * disk_total          total disk space in GB          mountpoint path (/")
  * disk_used           used disk space in GB           mountpoint path (/)
  * entropy             available entropy               NULL
  * gid                 GID of current user             NULL
@@ -69,5 +69,7 @@ static const struct arg args[] = {
 	{ temp, "[ %s\u00b0C]  ", "/sys/class/thermal/thermal_zone0/temp" },
 	{ ram_used, "[ %s]  ", NULL	},
 	{ disk_perc, "[ %s%%]  ", "/" },
+	{ wifi_perc, "[ %s%%]  ", "wlan0" },
+	{ battery_perc, "[ %s%%]  ", "BAT0" },
 	{ datetime, "%s",           "%b %e %H:%M" },
 };
