@@ -13,7 +13,6 @@ sudo emerge --ask x11-apps/xinit
 sudo emerge --ask x11-apps/xauth
 sudo emerge --ask x11-apps/xautolock
 sudo emerge --ask x11-misc/nitrogen
-sudo emerge --ask x11-misc/picom
 
 # sound
 sudo emerge --ask media-sound/rhythmbox
@@ -24,6 +23,13 @@ sudo emerge --ask media-sound/pulsemixer
 # misc
 sudo emerge --ask xfce-base/thunar
 sudo emerge --ask media-fonts/fontawesome
+
+# installing picom
+git clone https://github.com/jonaburg/picom.git && cd picom
+meson --buildtype=release . build
+ninja -C build && cd ..
+sudo mkdir --parents ~/.config/picom
+sudo cp picom.conf ~/.config/picom/picom.conf
 
 # pfetch
 git clone https://github.com/dylanaraps/pfetch.git && cd pfetch
