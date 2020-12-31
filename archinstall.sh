@@ -48,4 +48,4 @@ cd .. && cd st
 sudo make clean install
 
 # creating .xinitrc
-sudo cp xinitrc ~/.xinitrc
+sudo cp .xinitrc ~/.xinitrc
