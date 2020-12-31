@@ -18,7 +18,6 @@ sudo zypper install xauth
 sudo zypper install xinit
 sudo zypper install xautolock
 sudo zypper install nitrogen
-sudo zypper install picom
 
 # sound
 sudo zypper install rhythmbox
@@ -33,6 +32,13 @@ sudo zypper install fontawesome-fonts
 # zoom
 wget "https://zoom.us/client/latest/zoom_openSUSE_x86_64.rpm"
 sudo zypper install zoom_openSUSE_x86_64.rpm
+
+# installing picom
+git clone https://github.com/jonaburg/picom.git && cd picom
+meson --buildtype=release . build
+ninja -C build && cd ..
+sudo mkdir --parents ~/.config/picom
+sudo cp picom.conf ~/.config/picom/picom.conf
 
 # installing the suckless "suite"
 cd dmenu
