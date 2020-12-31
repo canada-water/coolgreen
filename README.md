@@ -38,6 +38,7 @@ Afterwards, ``cd`` into the directory, and run the same commands as the release 
 ![screenshot1](https://github.com/canada-water/coolgreen/blob/main/screenshots/coolgreen1.png)
 
 # to-do
+( ) find replacement for dwm
 
 ( ) optimize rice as much as possible
 
@@ -54,3 +55,6 @@ Afterwards, ``cd`` into the directory, and run the same commands as the release 
 ( ) remove proprietary software from scripts
 
 ( ) package final release
+
+# credits
+Thanks to GitHub user Jonaburg for creating [this](https://github.com/jonaburg/picom) amazing picom fork
