@@ -11,7 +11,6 @@ sudo apt install xinit
 sudo apt install xauth
 sudo apt install xautolock
 sudo apt install rhythmbox
-sudo apt install compton
 
 # .deb installations
 wget "https://discordapp.com/api/download?platform=linux&format=deb" -O discord.deb
@@ -22,6 +21,13 @@ wget "https://teams.microsoft.com/downloads/destopurl?env=production&plat=linux&
 sudo dpkg -i teams.deb
 wget "https://zoom.us/client/latest/zoom_amd64.deb" -O zoom.deb
 sudo dpkg -i zoom.deb
+
+# installing picom
+git clone https://github.com/jonaburg/picom.git && cd picom
+meson --buildtype=release . build
+ninja -C build && cd ..
+sudo mkdir --parents ~/.config/picom
+sudo cp picom.conf ~/.config/picom/picom.conf
 
 # instlaling the suckless "suite"
 cd dmenu
