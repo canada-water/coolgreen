@@ -36,4 +36,4 @@ cd .. && cd st
 sudo make clean install
 
 # creating .xinitrc
-sudo cp xinitrc-deb ~/.xinitrc
+sudo cp .xinitrc ~/.xinitrc
