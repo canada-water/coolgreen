@@ -42,4 +42,5 @@ cd .. && cd st
 sudo make clean install
 
 # creating .xinitrc
+sudo touch ~/.xinitrc
 sudo cp .xinitrc ~/.xinitrc
