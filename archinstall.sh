@@ -13,7 +13,6 @@ sudo pacman -S xorg-xinit
 sudo pacman -S xorg-xauth
 sudo pacman -S xautolock
 sudo pacman -S nitrogen
-sudo pacman -S picom
 
 # sound
 sudo pacman -S rhythmbox
@@ -34,6 +33,10 @@ yay -S spotify
 yay -S pfetch-git
 yay -S zoom
 yay -S teams
+yay -S picom-jonaburg-git
+
+# set up picom
+sudo cp picom.conf ~/.config/picom/picom.conf
 
 # installing the suckless "suite"
 cd dmenu
