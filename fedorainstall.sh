@@ -11,7 +11,6 @@ sudo dnf install xorg-x11-xinit
 sudo dnf install xorg-x11-xauth
 sudo dnf install xautolock
 sudo dnf install nitrogen
-sudo dnf install picom
 
 # sound
 sudo dnf install rhythmbox
@@ -24,6 +23,13 @@ wget "https://discordapp.com/api/download?platform=linux&format=tar.gz"
 # microsoft teams
 wget "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=linux&arch=x64&download=true&linuxArchiveType=rpm" -O teams.rpm
 sudo rpm -i teams.rpm
+
+# installing picom
+git clone https://github.com/jonaburg/picom.git && cd picom
+meson --buildtype=release . build
+ninja -C build && cd ..
+sudo mkdir --parents ~/.config/picom
+sudo cp picom.conf ~/.config/picom/picom.conf
 
 # installing the suckless "suite"
 cd dmenu
