@@ -1,5 +1,5 @@
 # Compositor
-picom -b --unredir-if-possible --backend xr_glx_hybrid --vsync --use-damage --glx-no-stencil &
+picom --experimental-backends &
 
 # slstatus
 slstatus &
