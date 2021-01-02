@@ -47,6 +47,7 @@ cd .. && cd slstatus
 sudo make clean install
 cd .. && cd st
 sudo make clean install
+cd ..
 
 # creating .xinitrc
 sudo touch ~/.xinitrc
