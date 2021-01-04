@@ -38,6 +38,9 @@ yay -S picom-jonaburg-git
 # set up picom
 sudo cp picom.conf ~/.config/picom/picom.conf
 
+# fonts
+sudo pacman -S dina-font ttf-ibm-plex ttf-liberation ttf-linux-libertine font-bh-ttf ttf-roboto tex-gyre-fonts ttf-fantasque-sans-mono ttf-jetbrins-mono ttf-monofur ttf-cascadia-code inter-font adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts noto-fonts-cjk noto-fonts-emoji ttf-joypixels
+
 # installing the suckless "suite"
 cd dmenu
 sudo make clean install
