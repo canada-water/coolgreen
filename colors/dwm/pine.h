@@ -78,6 +78,9 @@ static const char *thunarcmd[] = { "thunar", NULL};
 static const char *rhythmboxcmd[] = { "rhythmbox", NULL};
 static const char *spotifycmd[] = { "spotify", NULL};
 static const char *zoomcmd[] = { "zoom", NULL};
+static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
+static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
+static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -95,6 +98,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_m,	   spawn,	   {.v = rhythmboxcmd } },
 	{ MODKEY|ShiftMask,		XK_o,	   spawn,	   {.v = spotifycmd } },
 	{ MODKEY|ShiftMask,		XK_z,	   spawn,	   {.v = zoomcmd } },
+	{ MODKEY,                       XK_F11, spawn, {.v = downvol } },
+	{ MODKEY,                       XK_F9,  spawn, {.v = mutevol } },
+	{ MODKEY,                       XK_F12, spawn, {.v = upvol   } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
