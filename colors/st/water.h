@@ -99,24 +99,24 @@ unsigned int alpha = 255.0f; /* 0xd0 is transparent, 255.0f is opaque */
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#161212",
-	"#834E3B",
-	"#6D6160",
-	"#8F827C",
-	"#75544C",
-	"#75544C",
-	"#866050",
-	"#BAB5B7",
+	"#091013",
+	"#01538B",
+	"#068DA9",
+	"#026E90",
+	"#013A8B",
+	"#036CA5",
+	"#1D92A8",
+	"#018FBC",
 
 	/* 8 bright colors */
-	"#312828",
-	"#B65F40",
-	"#9A726F",
-	"#CBA28F",
-	"#A46556",
-	"#C29181",
-	"#BC775A",
-	"#F6F0F2",
+	"#182C35",
+	"#016BB5",
+	"#01BBE2",
+	"#018FBC",
+	"#014BB5",
+	"#018DD9",
+	"#18C6E7",
+	"#D3FFFF",
 
 	[255] = 0,
 

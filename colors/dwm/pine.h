@@ -28,7 +28,7 @@ static const unsigned int alphas [][3]	= {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -69,7 +69,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *slockcmd[] = { "slock", NULL};
 static const char *surfcmd[] = { "tabbed", "surf", "-pe", NULL};
-static const char *firefoxcmd[] = { "firefox", NULL};
+static const char *browsercmd[] = { "chromium", NULL};
 static const char *discordcmd[] = { "discord", NULL};
 static const char *vlccmd[] = { "vlc", NULL};
 static const char *scrnshtcmd[] = { "gnome-screenshot", NULL};
@@ -89,7 +89,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,		XK_l,	   spawn,          {.v = slockcmd } },
 	{ MODKEY|ShiftMask,		XK_s,	   spawn,	   {.v = surfcmd } },
-	{ MODKEY|ShiftMask,		XK_f,	   spawn,	   {.v = firefoxcmd } },
+	{ MODKEY|ShiftMask,		XK_b,	   spawn,	   {.v = browsercmd } },
 	{ MODKEY|ShiftMask,		XK_d,	   spawn,	   {.v = discordcmd } },
 	{ MODKEY|ShiftMask,		XK_v,	   spawn,	   {.v = vlccmd } },
 	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   {.v = scrnshtcmd } },
@@ -134,6 +134,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,		XK_r,	   quit,	   {1} },
 };
 
 /* button definitions */

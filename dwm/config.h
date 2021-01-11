@@ -6,14 +6,14 @@ static const unsigned int gappx	    = 10;	/* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Liberation Mono:size=11" };
-static const char dmenufont[]       = "Liberation Mono:size=11";
-static const char col_gray1[]       = "#101012";
-static const char col_gray2[]       = "#0C0C0C";
-static const char col_gray3[]       = "#36888f";
-static const char col_gray4[]       = "#faf7e8";
-static const char col_cyan[]        = "#274D4C";
-static const unsigned int baralpha  = 0xd0;
+static const char *fonts[]          = { "Liberation Mono:size=10" };
+static const char dmenufont[]       = "Liberation Mono:size=10";
+static const char col_gray1[]       = "#091013";
+static const char col_gray2[]       = "#091013";
+static const char col_gray3[]       = "#D3FFFF";
+static const char col_gray4[]       = "#D3FFFF";
+static const char col_cyan[]        = "#01538B";
+static const unsigned int baralpha  = 255.0f;  /* 0xd0 is transparent, 255.0f is opaque */
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -28,7 +28,8 @@ static const unsigned int alphas [][3]	= {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -69,7 +70,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *slockcmd[] = { "slock", NULL};
 static const char *surfcmd[] = { "tabbed", "surf", "-pe", NULL};
-static const char *firefoxcmd[] = { "firefox", NULL};
+static const char *browsercmd[] = { "chromium", NULL};
 static const char *discordcmd[] = { "discord", NULL};
 static const char *vlccmd[] = { "vlc", NULL};
 static const char *scrnshtcmd[] = { "gnome-screenshot", NULL};
@@ -78,6 +79,9 @@ static const char *thunarcmd[] = { "thunar", NULL};
 static const char *rhythmboxcmd[] = { "rhythmbox", NULL};
 static const char *spotifycmd[] = { "spotify", NULL};
 static const char *zoomcmd[] = { "zoom", NULL};
+static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
+static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
+static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -86,7 +90,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,		XK_l,	   spawn,          {.v = slockcmd } },
 	{ MODKEY|ShiftMask,		XK_s,	   spawn,	   {.v = surfcmd } },
-	{ MODKEY|ShiftMask,		XK_f,	   spawn,	   {.v = firefoxcmd } },
+	{ MODKEY|ShiftMask,		XK_b,	   spawn,	   {.v = browsercmd } },
 	{ MODKEY|ShiftMask,		XK_d,	   spawn,	   {.v = discordcmd } },
 	{ MODKEY|ShiftMask,		XK_v,	   spawn,	   {.v = vlccmd } },
 	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   {.v = scrnshtcmd } },
@@ -95,6 +99,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_m,	   spawn,	   {.v = rhythmboxcmd } },
 	{ MODKEY|ShiftMask,		XK_o,	   spawn,	   {.v = spotifycmd } },
 	{ MODKEY|ShiftMask,		XK_z,	   spawn,	   {.v = zoomcmd } },
+	{ MODKEY,                       XK_F11, spawn, {.v = downvol } },
+	{ MODKEY,                       XK_F9,  spawn, {.v = mutevol } },
+	{ MODKEY,                       XK_F12, spawn, {.v = upvol   } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
@@ -128,6 +135,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,		XK_r,	   quit,	   {1} },
 };
 
 /* button definitions */

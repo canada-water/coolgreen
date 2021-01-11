@@ -8,11 +8,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Liberation Mono:size=10" };
 static const char dmenufont[]       = "Liberation Mono:size=10";
-static const char col_gray1[]       = "#091013";
-static const char col_gray2[]       = "#091013";
-static const char col_gray3[]       = "#D3FFFF";
-static const char col_gray4[]       = "#D3FFFF";
-static const char col_cyan[]        = "#01538B";
+static const char col_gray1[]       = "#0D1018";
+static const char col_gray2[]       = "#0D1018";
+static const char col_gray3[]       = "#055FA0";
+static const char col_gray4[]       = "#0D1018";
+static const char col_cyan[]        = "#F15916";
 static const unsigned int baralpha  = 255.0f;  /* 0xd0 is transparent, 255.0f is opaque */
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
