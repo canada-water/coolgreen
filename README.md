@@ -42,7 +42,7 @@ Afterwards, ``cd`` into the directory, and run the same commands as the release 
 
 ( ) optimize rice as much as possible
 
-( ) fix keybindings for audio
+(x) fix keybindings for audio
 
 ( ) add in notification center
 
