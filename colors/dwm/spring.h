@@ -1,18 +1,18 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx	    = 10;	/* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Liberation Mono:size=10" };
 static const char dmenufont[]       = "Liberation Mono:size=10";
-static const char col_gray1[]       = "#282a36";
-static const char col_gray2[]       = "#282a36";
-static const char col_gray3[]       = "#f8f8f2";
-static const char col_gray4[]       = "#44475a";
-static const char col_cyan[]        = "#bd93f9";
+static const char col_gray1[]       = "#3D2C24";
+static const char col_gray2[]       = "#1E1612";
+static const char col_gray3[]       = "#F9FFFF";
+static const char col_gray4[]       = "#F9FFFF";
+static const char col_cyan[]        = "#03669B";
 static const unsigned int baralpha  = 255.0f;  /* 0xd0 is transparent, 255.0f is opaque */
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
