@@ -3,57 +3,56 @@
 sudo pacman -Su
 sudo pacman -Syu
 
+# installing paru
+git clone https://aur.archlinux.org/paru.git
+cd paru && makepkg -si && cd ..
+
 # internet
-sudo pacman -S firefox
-sudo pacman -S discord
+paru firefox
+paru discord
+paru zoom
+paru teams
 
 # xorg
-sudo pacman -S xorg-server
-sudo pacman -S xorg-xinit
-sudo pacman -S xorg-xauth
-sudo pacman -S xautolock
-sudo pacman -S nitrogen
+paru xorg-server
+paru xorg-xinit
+paru xorg-xauth
+paru nitrogen
 
 # sound
-sudo pacman -S rhythmbox
-sudo pacman -S pavucontrol
-sudo pacman -S pamixer
+paru rhythmbox
+paru pavucontrol
+paru pamixer
+paru pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack pulseaudio-librc
+paru spotify
+
+# fonts
+paru dina-font ttf-ibm-plex ttf-liberation ttf-linux-libertine font-bh-ttf ttf-roboto tex-gyre-fonts ttf-fantasque-sans-mono ttf-jetbrins-mono ttf-monofur ttf-cascadia-code inter-font adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts noto-fonts-cjk noto-fonts-emoji ttf-joypixels ttf-font-awesome otf-font-awesome
 
 # misc
-sudo pacman -S thunar
-sudo pacman -S ttf-font-awesome
-sudo pacman -S otf-font-awesome
-
-# installing yay
-git clone https://aur.archlinux.org/yay.git && cd yay
-makepkg -si
-
-# installing AUR packages
-yay -S spotify 
-yay -S pfetch-git
-yay -S zoom
-yay -S teams
-yay -S picom-jonaburg-git
+paru thunar
+paru pfetch-git
+paru picom-jonaburg-git
+paru thunar
 
 # set up picom
 sudo cp picom.conf ~/.config/picom/picom.conf
 
-# fonts
-sudo pacman -S dina-font ttf-ibm-plex ttf-liberation ttf-linux-libertine font-bh-ttf ttf-roboto tex-gyre-fonts ttf-fantasque-sans-mono ttf-jetbrins-mono ttf-monofur ttf-cascadia-code inter-font adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts noto-fonts-cjk noto-fonts-emoji ttf-joypixels
-
 # installing the suckless "suite"
 cd dmenu
 sudo make clean install
-cd .. && cd dwm
+cd ../dwm
 sudo make clean install
-cd .. && cd slock
+cd ../slock
 sudo make clean install
-cd .. && cd slstatus
+cd ../slstatus
 sudo make clean install
-cd .. && cd st
+cd ../st
 sudo make clean install
 cd ..
 
 # creating .xinitrc
 sudo touch ~/.xinitrc
 sudo cp .xinitrc ~/.xinitrc
+
+# other odds and ends
